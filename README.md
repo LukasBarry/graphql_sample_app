@@ -1,24 +1,5 @@
-# README
+# GraphQL Sample App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Creating a sample GraphQL app to see how it works and test the different ways it can be used to help our overall project
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- uses `graphiql` gem for front end testing
