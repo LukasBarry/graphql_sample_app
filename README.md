@@ -172,3 +172,8 @@ mutation {
 }
 ```
 - if successful, it will return the user data specified in the `create_user` mutation, otherwise it will return the error messages
+
+### Note:
+- When running the queries, you cannot use snake case
+- must use camel case
+- for example, cannot use `user_id` even if that is the field, must use `userId` instead
