@@ -6,7 +6,7 @@ module Types
     field :venues, [Types::VenueType], null: true
     field :surveys, [Types::SurveyType], null: true
     field :questions, [Types::QuestionType], null: true
-    field :settings, String, hash_key: 'settings', null: true
+    field :settings, String, null: true
 
     def settings
       {
