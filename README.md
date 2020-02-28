@@ -198,3 +198,9 @@ mutation {
 - When running the queries, you cannot use snake case
 - must use camel case
 - for example, cannot use `user_id` even if that is the field, must use `userId` instead
+
+### To Run:
+- clone and download repo
+- run `$ rails s`
+- go to `localhost:3000/graphiql`
+- see `lib/example_queries.rb` for more examples of how to run queries
