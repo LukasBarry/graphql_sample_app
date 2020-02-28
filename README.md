@@ -171,6 +171,27 @@ mutation {
   }
 }
 ```
+OR
+```
+mutation {
+  createSurvey(input: {
+    title: "My first survey",
+    body: "Taking my first survey to see how it works. Sounds like fun",
+    userId: 6
+  }) {
+    survey {
+      id
+      title
+      body
+      user {
+        name
+        email
+      }
+    }
+    errors
+  }
+}
+```
 - if successful, it will return the user data specified in the `create_user` mutation, otherwise it will return the error messages
 
 ### Note:

@@ -1,14 +1,16 @@
 class Mutations::CreateSurvey < Mutations::BaseMutation
-  argument :title, String, required: true
-  argument :body, String, required: true
+  argument :venue_id, ID, required: true
+  argument :business_id, ID, required: true
   argument :user_id, ID, required: true
 
   field :survey, Types::SurveyType, null: false
   field :errors, [String], null: false
 
-  def resolve(title:, body:, user_id:)
+  def resolve(venue_id:, business_id:, user_id:)
     user = User.find(user_id)
-    survey = user.surveys.build(title: title, body: body, user_id: user.id)
+    survey = user.surveys.new(
+      venue_id: venue.id, business_id: business.id
+    )
 
     if survey.save
       {
